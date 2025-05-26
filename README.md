@@ -4,6 +4,10 @@
 
 This repository contains the implementation of **Burst2Scene**, a deep learning framework that generates a high-resolution, realistic scene image from a burst of low-resolution video frames. The project leverages a ResNet-based generator trained using perceptual and adversarial losses, with a PatchGAN discriminator to enhance local texture realism.
 
+## NOTE
+Most of the projects source code and files are too large to upload to GitHub. Please Contact for the source code demonstration
+
+
 ## 📂 Project Structure
 - `generator.py` – ResNet-based generator
 - `discriminator.py` – Basic global discriminator
