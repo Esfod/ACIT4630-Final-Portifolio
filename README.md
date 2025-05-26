@@ -41,5 +41,31 @@ This repository contains the implementation of **Burst2Scene**, a deep learning 
 Install requirements:
 ```bash
 pip install -r requirements.txt
+```
+
+## Requirements
+Version 1 (Perceptual-only, no discriminator):
+```python train_colab.py```
+
+Version 2 (PatchGAN adversarial training):
+```python train_colab_PatchGAN.py```
+* Make sure to load the pre-trained generator from final_GAN_v1_generator.pth before starting adversarial fine-tuning
+
+## Previewing Outputs
+Run the preview script to visualise model output on the validation set:
+```
+python preview.py --checkpoint checkpoints/final_GAN_v2_generator.pth
+```
+* Output images will be saved under the previews/ directory.
+
+
+## Citation
+Burst2Scene: Adversarial Scene Synthesis from Burst Video Frames using a ResNet–PatchGAN Framework (2025)
+
+
+
+
+
+
 
 
