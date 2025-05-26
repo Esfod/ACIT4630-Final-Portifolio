@@ -43,6 +43,8 @@ Install requirements:
 pip install -r requirements.txt
 ```
 
+Download all the files in this GitHub repository.
+
 ## Requirements
 Version 1 (Perceptual-only, no discriminator):
 ```python train_colab.py```
@@ -50,6 +52,14 @@ Version 1 (Perceptual-only, no discriminator):
 Version 2 (PatchGAN adversarial training):
 ```python train_colab_PatchGAN.py```
 * Make sure to load the pre-trained generator from final_GAN_v1_generator.pth before starting adversarial fine-tuning
+
+
+## Running the model
+```train.py```: run script to train model
+```train_colab.py```: run in google colab with A1000 gpu, this trains the model
+```preview.py```: uses the trained model by exposing them to unseen bursts images
+
+
 
 ## Previewing Outputs
 Run the preview script to visualise model output on the validation set:
